@@ -1,5 +1,5 @@
 #!/bin/bash
-#EDIT CONFIG
+#BEGIN CONFIG
 TSVER="3.0.6.1" # Version upgrading to. Stable releases only.
 TSBIT="amd64" # x86 or amd64
 #END CONFIG
