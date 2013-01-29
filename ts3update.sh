@@ -1,5 +1,9 @@
 #!/bin/bash
-PKGURL='http://teamspeak.gameserver.gamed.de/ts3/releases/3.0.6.1/teamspeak3-server_linux-amd64-3.0.6.1.tar.gz'
+#EDIT CONFIG
+TSVER="3.0.6.1" # Version upgrading to. Stable releases only.
+TSBIT="amd64" # x86 or amd64
+#END CONFIG
+PKGURL="http://teamspeak.gameserver.gamed.de/ts3/releases/$TSBIT/teamspeak3-server_linux-$TSBIT-$TSVER.tar.gz"
 PKGNAME=$(basename $PKGURL)
 clear
 echo Did you STOP and BACKUP the TeamSpeak3 Server\?
@@ -15,16 +19,16 @@ tar -zxf $PKGNAME
 echo Finished...
 echo '################'
 echo Moving Files...
-mv ./teamspeak3-server_linux-amd64/doc/* ./doc/ > /dev/null
-mv ./teamspeak3-server_linux-amd64/serverquerydocs/* ./serverquerydocs/ > /dev/null
-mv ./teamspeak3-server_linux-amd64/sql/create_mysql* ./sql/create_mysql/ > /dev/null
-mv ./teamspeak3-server_linux-amd64/sql/create_sqlite/* ./sql/create_sqlite/ > /dev/null
-mv ./teamspeak3-server_linux-amd64/sql/* ./sql/ > /dev/null
-mv ./teamspeak3-server_linux-amd64/* ./ > /dev/null
+mv ./teamspeak3-server_linux-$TSBIT/doc/* ./doc/ > /dev/null
+mv ./teamspeak3-server_linux-$TSBIT/serverquerydocs/* ./serverquerydocs/ > /dev/null
+mv ./teamspeak3-server_linux-$TSBIT/sql/create_mysql* ./sql/create_mysql/ > /dev/null
+mv ./teamspeak3-server_linux-$TSBIT/sql/create_sqlite/* ./sql/create_sqlite/ > /dev/null
+mv ./teamspeak3-server_linux-$TSBIT/sql/* ./sql/ > /dev/null
+mv ./teamspeak3-server_linux-$TSBIT/* ./ > /dev/null
 echo Finished...
 echo '################'
 echo Cleaning Up...
-rm -fr teamspeak3-server_linux-amd64
+rm -fr teamspeak3-server_linux-$TSBIT
 rm -f $PKGNAME
 rm -f update.sh
 echo Finished...
