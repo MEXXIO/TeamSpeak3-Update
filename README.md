@@ -1,11 +1,15 @@
-Open ts3update.sh with vim/nano/gedit and edit PKGURL with the latest TeamSpeak3 Linux Server Download link (64-bit).
+Open ts3update.sh with vim/nano/gedit and edit TSVER and TSBIT.
+
+TSVER: What ever the latest stable release is.
+
+TSBIT: x86 or amd64 for 86bit or 64bit.
 
 Save it.
-
-Place it in your TeamSpeak3 installation directory.
 
 Stop your TeamSpeak3 server.
 
 Back up your TeamSpeak3 server.
+
+Place it in your TeamSpeak3 installation directory.
 
 Run the ts3server.sh
