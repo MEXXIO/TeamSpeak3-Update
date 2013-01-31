@@ -33,9 +33,10 @@ rm -f $PKGNAME
 rm -f update.sh
 echo Finished...
 echo '################'
-echo Add inifile=ts3server.ini to ts3server_startscript.sh
-read -p "Press [ENTER] to continue to the editor"
-vi ts3server_startscript.sh
-echo Finished...
+echo "Did you have a modified ts3server_startscript.sh [y/N]? (ex: inifile=ts3server.ini)"
+read MODSCRIPT
+if [[ $MODSCRIPT == 'y' || $MODSCRIPT == 'Y' ]]; then
+  vi ts3server_startscript.sh
+fi
 echo '################'
 echo Update Complete\!
