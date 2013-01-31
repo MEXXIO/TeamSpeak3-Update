@@ -3,7 +3,7 @@
 TSVER="3.0.6.1" # Version upgrading to. Stable releases only.
 TSBIT="amd64" # x86 or amd64
 #END CONFIG
-PKGURL="http://teamspeak.gameserver.gamed.de/ts3/releases/$TSBIT/teamspeak3-server_linux-$TSBIT-$TSVER.tar.gz"
+PKGURL="http://teamspeak.gameserver.gamed.de/ts3/releases/$TSVER/teamspeak3-server_linux-$TSBIT-$TSVER.tar.gz"
 PKGNAME=$(basename $PKGURL)
 clear
 echo Did you STOP and BACKUP the TeamSpeak3 Server\?
