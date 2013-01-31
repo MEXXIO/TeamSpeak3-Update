@@ -19,12 +19,12 @@ tar -zxf $PKGNAME
 echo Finished...
 echo '################'
 echo Moving Files...
-mv ./teamspeak3-server_linux-$TSBIT/doc/* ./doc/ > /dev/null
-mv ./teamspeak3-server_linux-$TSBIT/serverquerydocs/* ./serverquerydocs/ > /dev/null
-mv ./teamspeak3-server_linux-$TSBIT/sql/create_mysql* ./sql/create_mysql/ > /dev/null
-mv ./teamspeak3-server_linux-$TSBIT/sql/create_sqlite/* ./sql/create_sqlite/ > /dev/null
-mv ./teamspeak3-server_linux-$TSBIT/sql/* ./sql/ > /dev/null
-mv ./teamspeak3-server_linux-$TSBIT/* ./ > /dev/null
+mv ./teamspeak3-server_linux-$TSBIT/doc/* ./doc/ 2> /dev/null
+mv ./teamspeak3-server_linux-$TSBIT/serverquerydocs/* ./serverquerydocs/ 2> /dev/null
+mv ./teamspeak3-server_linux-$TSBIT/sql/create_mysql* ./sql/create_mysql/ 2> /dev/null
+mv ./teamspeak3-server_linux-$TSBIT/sql/create_sqlite/* ./sql/create_sqlite/ 2> /dev/null
+mv ./teamspeak3-server_linux-$TSBIT/sql/* ./sql/ 2> /dev/null
+mv ./teamspeak3-server_linux-$TSBIT/* ./ 2> /dev/null
 echo Finished...
 echo '################'
 echo Cleaning Up...
