@@ -24,9 +24,11 @@ echo Cleaning Up...
 rm -fr teamspeak3-server_linux-$TSBIT
 rm -f $PKGNAME
 rm -f update.sh
-echo "Did you have a modified ts3server_startscript.sh [y/N]? (ex: inifile=ts3server.ini)"
+echo -n "Modify ts3server_startscript.sh [y/N]? (ex: inifile=ts3server.ini)"
 read MODSCRIPT
-if [[ $MODSCRIPT == 'y' || $MODSCRIPT == 'Y' ]]; then
+case $MODSCRIPT in
+[yY] | [yY][eE][sS] )
   vi ts3server_startscript.sh
-fi
+;;
+esac
 echo Update Complete\!
