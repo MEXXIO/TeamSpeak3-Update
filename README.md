@@ -12,6 +12,6 @@ Back up your TeamSpeak3 server.
 
 Place ts3server.sh in your TeamSpeak3 installation directory.
 
-Make is executable chmod 744 ts3server.sh
+Make it executable chmod 744 ts3server.sh
 
 Run the ts3server.sh
