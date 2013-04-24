@@ -23,7 +23,7 @@ mv ./teamspeak3-server_linux-$TSBIT/* ./ 2> /dev/null
 echo Cleaning Up...
 rm -fr teamspeak3-server_linux-$TSBIT
 rm -f $PKGNAME
-rm -f update.sh
+rm -f ts3update.sh
 echo -n "Modify ts3server_startscript.sh [y/N]? (ex: inifile=ts3server.ini)"
 read MODSCRIPT
 case $MODSCRIPT in
