@@ -1,6 +1,6 @@
 #!/bin/bash
 #BEGIN CONFIG
-TSVER="3.0.7.1" # Version upgrading to. Stable releases only.
+TSVER="3.0.7.2" # Version upgrading to. Stable releases only.
 TSBIT="amd64" # x86 or amd64
 #END CONFIG
 PKGURL="http://teamspeak.gameserver.gamed.de/ts3/releases/$TSVER/teamspeak3-server_linux-$TSBIT-$TSVER.tar.gz"
