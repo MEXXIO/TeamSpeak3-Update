@@ -1,8 +1,8 @@
 Open ts3update.sh with vim/nano/gedit and edit TSVER and TSBIT.
 
-TSVER: What ever the latest stable release is.
+* TSVER: What ever the latest stable release is.
 
-TSBIT: x86 or amd64 for 86bit or 64bit.
+* TSBIT: x86 or amd64 for 86bit or 64bit.
 
 Save it.
 
