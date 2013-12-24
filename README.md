@@ -1,3 +1,5 @@
+####Script uses __wget__
+
 1. Open _ts3update.sh_ with vim/nano/gedit and edit.
   * __TSVER__ - Version upgrading to. Stable releases only.
   * __TSBIT__ - _x86_ or _amd64_
